@@ -10,6 +10,8 @@ import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.painter.Painter
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import com.sametb.forlibrary.ui.theme.ForLibraryTheme
 import com.sametb.image_preview.ImagePreview
@@ -25,6 +27,10 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colorScheme.background
                 ) {
 //                    Image(painter = , contentDescription = )
+                    ImagePreview(
+                        image = painterResource(id = R.drawable.kermit),
+                        contentDescription = "Kermit the Frog",
+                    )
                 }
             }
         }
