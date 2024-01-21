@@ -16,4 +16,3 @@ dependencyResolutionManagement {
 rootProject.name = "ForLibrary"
 include ':app'
 include ':image-preview'
-include ':sam-lib'
